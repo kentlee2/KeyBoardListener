@@ -1,12 +1,17 @@
 # KeyBoardListener
 沉浸式状态栏下editText 键盘弹出遮挡问题解决
+AndroidManifest  设置windowSoftInputMode为 stateHidden|adjustResize
+
 public class KeyBoardListener {
+
     private Activity activity;
+    
     private View mChildOfContent;
+    
     private int usableHeightPrevious;
+    
     private FrameLayout.LayoutParams frameLayoutParams;
-
-
+    
     public KeyBoardListener(Activity activity) {
         super();
         this.activity = activity;
